@@ -1,0 +1,17 @@
+<!--pages/mtydream/index.wxml-->
+<view class="mydream" wx:if="{{msgList.length>0}}">
+    <view class="mydream_main">
+        <view class="mydream_main_container {{item.isMove ? 'slide' : ''}}" wx:for="{{msgList}}" wx:key="index" bindtouchstart="touchstart" bindtouchmove="touchmove" data-index="{{index}}">
+            <view bindtap="router" data-item="{{item}}" data-id="{{item._id}}" class="mydream_main_container_size">{{item.title}}</view>
+            <view class="complete_btn" data-id="{{item._id}}" bindtap="complete">
+                <view></view>
+                <view>完成</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="notdata" wx:else="">
+    <image src="../../image/08.png"></image>
+    <view>还没有许愿~  快来许愿吧！</view>
+</view>
+<view bindtap="addrouter" class="mydream_add"></view>

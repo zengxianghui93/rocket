@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/mydream/index",
+        "pages/adddream/index",
+        "pages/tadream/index",
+        "pages/shareappmessage/index",
+        "pages/modification/index",
+        "pages/login/index",
+        "pages/Completed/index",
+        "pages/minedata/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "愿望清单",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#1485EE",
+        "selectedColor": "#FF514E",
+        "list": [
+            {
+                "pagePath": "pages/tadream/index",
+                "text": "Ta的愿望",
+                "iconPath": "image/02.png",
+                "selectedIconPath": "image/022.png"
+            },
+            {
+                "pagePath": "pages/mydream/index",
+                "text": "我的愿望",
+                "iconPath": "image/04.png",
+                "selectedIconPath": "image/044.png"
+            },
+            {
+                "pagePath": "pages/minedata/index",
+                "text": "我的",
+                "iconPath": "image/06.png",
+                "selectedIconPath": "image/066.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
